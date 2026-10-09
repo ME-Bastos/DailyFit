@@ -2373,7 +2373,7 @@ footer {
     font-size: 13px;
     line-height: 1.5;
     cursor: pointer;
-}
+} 
 
 .btn-cadastro-submit {
     width: 100%;
@@ -2387,14 +2387,14 @@ footer {
     font-weight: 700;
     cursor: pointer;
     transition: background 0.2s ease, transform 0.2s ease;
-}
+} 
 
 .btn-cadastro-submit:hover {
     background: var(--amarelo-hover);
     transform: translateY(-1px);
 }
 
-.cadastro-login {
+ .cadastro-login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2402,7 +2402,7 @@ footer {
     margin-top: 25px;
     color: var(--texto-secundario);
     font-size: 14px;
-}
+} 
 
 .cadastro-login a {
     color: var(--amarelo);
@@ -2750,4 +2750,144 @@ footer {
     width: 35px;
     height: 1px;
     background: var(--fundo);
+}
+
+/* Login */
+
+.login-container {
+    max-width: 520px;
+}
+
+.login-form input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background: var(--branco);
+    color: var(--texto);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.login-form input[type="password"]:focus {
+    border-color: var(--amarelo);
+    background: var(--branco);
+}
+
+.login-password {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.login-password input {
+    padding-right: 80px;
+}
+
+.login-show-password {
+    position: absolute;
+    right: 12px;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    color: var(--laranja-principal);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-show-password:hover {
+    color: var(--laranja-principal);
+}
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: -5px 0 24px;
+    font-size: 12px;
+}
+
+.login-remember {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--texto-secundario);
+    cursor: pointer;
+}
+
+.login-remember input {
+    accent-color: var(--amarelo);
+    cursor: pointer;
+}
+
+.login-options a,
+.cadastro-login a,
+.login-back a {
+    color: var(--laranja-principal);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-options a:hover,
+.cadastro-login a:hover,
+.login-back a:hover {
+    text-decoration: underline;
+}
+
+.login-form .btn-cadastro-submit {
+    width: 100%;
+    box-shadow: none;
+}
+
+.login-message {
+    margin: 12px 0 0;
+    color: var(--texto-secundario);
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.login-back {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.login-options > a,
+.login-back a {
+    font-size: 14px;
+}
+
+.login-remember {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin-top: 2px;
+}
+
+.login-remember input {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: var(--laranja-principal);
+    cursor: pointer;
+}
+
+.login-remember label {
+    color: var(--texto-secundario);
+    font-size: 13px;
+    line-height: 1.5;
+    cursor: pointer;
+} 
+
+@media (max-width: 600px) {
+    .login-options {
+        align-items: flex-start;
+    }
 }
